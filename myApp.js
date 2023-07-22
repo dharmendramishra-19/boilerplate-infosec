@@ -1,51 +1,12 @@
 const express = require('express');
 const app = express();
+const helmet = require("helmet");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+app.use(
+  helmet({
+    xPoweredBy: false,
+  })
+);
 
 module.exports = app;
 const api = require('./server.js');
